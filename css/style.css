@@ -6,6 +6,7 @@
 
 body {
     font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -51,11 +52,8 @@ body {
     align-items: center;
 }
 
-.header > section {
-    margin-left: 60px;
-}
-
 .first {
+    margin-left: 60px;
     display: flex;
     align-items: center;
     width: 40%;
@@ -75,13 +73,13 @@ body {
 .first a {
     text-decoration: none;
     font-family: "Nunito", sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #000000;
     padding: 12px 15px;
     background-color: #fff;
     border: 3px solid #000000;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: 250ms;
 }
 
@@ -89,7 +87,6 @@ body {
     color: #ffffff;
     background-color: #000;
     border: 3px solid #000000;
-    border-radius: 10px;
 }
 
 .second {
