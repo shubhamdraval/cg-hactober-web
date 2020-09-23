@@ -21,7 +21,7 @@
   <!-- Navbar -->
   <div class="navbar">
     <img src="assets/SVGs/logo.svg" alt="Club-gamma">
-    <div>
+    <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#QnA">Q&A</a>
       <a href="#prizes">Prizes</a>
@@ -48,29 +48,93 @@
           <img src="assets/hacktoberfest-logo.svg" alt="Hactoberfest">
         </div>
       </div>
-    </div>
+    </div> <!-- Header-end -->
 
+    <!-- QnA section -->
     <div class="section">
-      <h1>New section</h1>
+      <!-- Q1 -->
+      <div class="slide">
+        <div class="container">
+          <h1>What is open sourcing?</h1>
+          <p>As we all know that there are thousands of projects and softwares whose code is available to all and anyone
+            can make changes in it and also report bugs in the software/project and such softwares/projects are called
+            Open source projects.</p>
+          <p>Anyone who contributes to such open source projects are called Open source
+            contributors. Now that doesn't mean that you can contribute through only coding, you can also improve the
+            documentation of the project, it is also an open source contribution.</p>
+        </div>
+      </div>
+      <!-- Q2 -->
+      <div class="slide">
+        <div class="container">
+          <h1>How Club Gamma is going to celebrate Hactoberfest?</h1>
+          <p>Club Gamma is the community which aims to work together and grow together. We are going to celebrate the
+            Hactoberfest this year with a great enthusiasm.</p>
+          <p>We will put projects on different fields like Mobile app development, Web development etc. We will
+            initialise
+            some GitHub repo and will make them open source. Anyone can contribute to any of those projects during
+            Hactoberfest and avail the cool prizes by DigitalOcean, GitHub, Twilio and Club Gamma also.</p>
+          <button onclick="window.open('https://github.com/', '_blank')" class="overlayLeftBtn">
+            <span>Check Details</span>
+          </button>
+        </div>
+      </div>
+      <!-- Q3 -->
+      <div class="slide">
+        <div class="container">
+          <h1>How can I participate?</h1>
+          <p>Hacktoberfest is open to everyone in our global community. Whether you’re a seasoned contributor or looking
+            for projects to contribute to for the first time, you’re welcome to participate.</p>
+          <p>Pull requests can be made in any GitHub-hosted repositories/projects. As long as the project is public and
+            GitHub-hosted, your pull requests will count toward your participation.</p>
+          <p>You can sign up anytime between October 1 and October 31. Just be sure to sign up on the official
+            Hacktoberfest website for your pull requests to count.</p>
+        </div>
+      </div>
+      <!-- Q4 -->
+      <div class="slide">
+        <div class="container">
+          <h1>What are the rules?</h1>
+          <p>To get a shirt, you must make four pull requests (PRs) between October 1–31 in any time zone. Pull requests
+            can be to any public repository on GitHub, not just the ones highlighted. The pull request must contain
+            commits you made yourself.</p>
+          <p>If a maintainer reports your pull request as spam, it will not be counted toward your participation in
+            Hacktoberfest. If a maintainer reports behavior that’s not in line with the project’s code of conduct, you
+            will be ineligible to participate. This year, the first 75,000 participants can earn a T-shirt. </p>
+        </div>
+      </div>
+      <!-- Q5 -->
+      <div class="slide">
+        <div class="container">
+          <h1>What are the standards for a pull request?</h1>
+          <p>Pull requests that are automated (e.g. scripted opening pull requests to remove whitespace/fix
+            typos/optimize images).</p>
+          <p>Pull requests that are disruptive (e.g. taking someone else's branch/commits and making a pull request).
+          </p>
+          <p>Pull requests that are regarded by a project maintainer as a hindrance vs. helping.</p>
+          <p>Something that's clearly an attempt to simply +1 your pull request count for October.</p>
+          <p>Last but not least, one pull request to fix a typo is fine, but 5 pull requests to remove a stray
+            whitespace is not</p>
+        </div>
+      </div> <!-- QnA-end -->
+
     </div>
 
-  </div>
+    <!-- fullpage.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
 
-  <!-- fullpage.min.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
-
-  <!-- Custom JS -->
-  <script>
-    new fullpage('#fullPage', {
-      autoScrolling: true,
-      navigation: true,
-      // anchors: ['home', 'QnA', 'prizes', 'sponsors', 'contact'],
-      // navigationTooltips: ['Home', 'Q&A', 'Prizes', 'Sponsors', 'Contact'],
-      showActiveTooltip: true,
-      controlArrows: false,
-      slidesNavigation: true,
-    });
-  </script>
+    <!-- Custom JS -->
+    <script>
+      new fullpage('#fullPage', {
+        autoScrolling: true,
+        navigation: true,
+        // anchors: ['home', 'QnA', 'prizes', 'sponsors', 'contact'],
+        // navigationTooltips: ['Home', 'Q&A', 'Prizes', 'Sponsors', 'Contact'],
+        showActiveTooltip: true,
+        controlArrows: false,
+        slidesNavigation: true,
+      });
+    </script>
 
 </body>
 
