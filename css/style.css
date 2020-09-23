@@ -114,7 +114,7 @@ body {
     top: 0;
     right: 0;
     padding-top: 44px;
-    background: #efefef;
+    background: rgb(239, 239, 239);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -285,6 +285,7 @@ body {
 .fp-controlArrow.fp-prev {
     border-color: transparent black transparent transparent !important;
     left: 128px !important;
+    border-width: 19px 17px 19px 0 !important;
 }
 
 .fp-controlArrow.fp-prev:hover {
@@ -294,6 +295,7 @@ body {
 .fp-controlArrow.fp-next {
     border-color: transparent transparent transparent black !important;
     right: 128px !important;
+    border-width: 19px 0 19px 17px !important;
 }
 
 .fp-controlArrow.fp-next:hover {
@@ -307,7 +309,6 @@ body {
 #fp-nav ul > li > .fp-tooltip.fp-right {
     color: black;
 }
-
 
 
 
@@ -360,6 +361,10 @@ body {
 
   .apply-with-mlh img {
     height: 12px;
+  }
+
+  #fp-nav {
+    display: none;
   }
 
   .fp-controlArrow.fp-prev {
