@@ -173,18 +173,18 @@ body {
 .hero-svg > img {
   width: 80%;
   position: relative;
-  animation: float-updown 10s ease infinite;
+  animation: float-updown 5s linear infinite;
 }
 
 @keyframes float-updown {
   0% {
-    top: -10px;
+    top: 0;
   }
   50% {
-    top: 20px;
+    top: 5%;
   }
   100% {
-    top: -10px;
+    top: 0;
   }
 }
 
@@ -274,7 +274,7 @@ body {
 
 .p-one > p{
     font-size: 1.2rem;
-    line-height: 1.3rem;
+    line-height: 1.6rem;
 }
 
 .p-two {
@@ -287,9 +287,48 @@ body {
     width: 70%;
 }
 
-/* --------------- Prizes-div-end ----------- */
+/* --------------- Prizes-div-end -------------- */
 
-/* --------------- Beta-Modal --------------- */
+/* --------------- Sponsers-div ---------------- */
+
+.sponsers{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sponsers h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.underline{
+    height: 5px;
+    width: 60px;
+    background-color: #000000;
+    margin-bottom: 10px;
+}
+
+.sponsers img{
+    /* position: absolute; */
+    height: 50px !important;
+    width: auto;
+    padding: 5px;
+    transition: 300ms ease;
+}
+
+.sponsers img:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* --------------- Sponsers-div-end ------------ */
+
+/* --------------- Beta-Modal ------------------ */
 .beta-modal {
   position: absolute;
   bottom: 24px;
