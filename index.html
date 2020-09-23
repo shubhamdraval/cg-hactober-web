@@ -140,23 +140,40 @@
         </div>
       </div> <!-- QnA-end -->
 
-    </div>
+    </div> <!-- FullPage-end -->
+  </div>
 
-    <!-- fullpage.min.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+  <!-- Site is in beta stage -->
+  <div class="beta-modal">
+    <span>🚧 &nbsp;Site is in Beta stage&nbsp; 🚧 <strong class="close">&times;</strong></span>
+  </div>
 
-    <!-- Custom JS -->
-    <script>
-      new fullpage('#fullPage', {
-        autoScrolling: true,
-        navigation: true,
-        // anchors: ['home', 'QnA', 'prizes', 'sponsors', 'contact'],
-        // navigationTooltips: ['Home', 'Q&A', 'Prizes', 'Sponsors', 'Contact'],
-        showActiveTooltip: true,
-        controlArrows: false,
-        slidesNavigation: true,
-      });
-    </script>
+  <!-- fullpage.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    // Website is in beta stage
+    window.onload = () => {
+      document.querySelector('.close').onclick = () => {
+        document.querySelector('.beta-modal').style.opacity = '0';
+      };
+      setTimeout(() => {
+        document.querySelector('.beta-modal').style.opacity = '0';
+      }, 5000);
+    }
+
+    // FullPage
+    new fullpage('#fullPage', {
+      autoScrolling: true,
+      navigation: true,
+      // anchors: ['home', 'QnA', 'prizes', 'sponsors', 'contact'],
+      // navigationTooltips: ['Home', 'Q&A', 'Prizes', 'Sponsors', 'Contact'],
+      showActiveTooltip: true,
+      controlArrows: false,
+      slidesNavigation: true,
+    });
+  </script>
 
 </body>
 
