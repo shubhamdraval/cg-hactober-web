@@ -308,53 +308,87 @@ body {
     color: black;
 }
 
+
+
+
 /* ==================== Media Queries ==================== */
 
-@media (max-width: 888px) {
-    .navbar {
-        padding: 0 24px 0 16px;
-        height: 56px;
-    }
 
-    .navbar .nav-links {
-        display: none;
-    }
+@media(max-width: 888px) {
+  .navbar {
+    padding: 0 24px 0 16px;
+    height: 56px;
+  }
 
-    #menu-toggle {
-        display: block;
-    }
+  .navbar .nav-links {
+    display: none;
+  }
 
-    .header {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
+  #menu-toggle {
+    display: block;
+  }
 
-    .hero-content {
-        width: 100vw;
-        height: fit-content;
-        align-items: center;
-    }
+  .header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .hero-content > p {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-        word-spacing: 2px;
-        text-align: center;
-    }
+  .hero-content {
+    width: 100vw;
+    height: fit-content;
+    align-items: center;
+  }
 
-    .hero-svg {
-        width: 100vw;
-        justify-content: center;
-        margin-bottom: 32px;
-    }
+  .hero-content > p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    word-spacing: 2px;
+    text-align: center;
+  }
 
-    .apply-with-mlh {
-        padding: 7px 10px;
-        font-size: 1.1rem;
-    }
+  .hero-svg {
+    width: 100vw;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
 
-    .apply-with-mlh img {
-        height: 12px;
-    }
+  .apply-with-mlh {
+    padding: 7px 10px;
+    font-size: 1.1rem;
+  }
+
+  .apply-with-mlh img {
+    height: 12px;
+  }
+
+  .fp-controlArrow.fp-prev {
+    border-width: 19px 17px 19px 0 !important;
+    left: 10px !important;
+  }
+
+  .fp-controlArrow.fp-next {
+    border-width: 19px 0 19px 17px !important;
+    right: 10px !important;
+  }
+
+  .section .fp-slidesNav.fp-bottom {
+    left: 35% !important;
+  }
+
+  .section .fp-slidesNav {
+    left: 48% !important;
+  }
+
+  .slide h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 16px;
+  }
+
+  .slide p {
+    font-size: 1.2rem;
+    width: 70%;
+    line-height: 1.3rem;
+  }
 }
