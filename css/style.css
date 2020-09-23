@@ -49,7 +49,7 @@ body {
 
 /*------------- Menu -------------*/
 #menu-toggle {
-  display: block;
+  display: none;
   margin-left: auto;
   position: relative;
   -webkit-user-select: none;
@@ -166,41 +166,41 @@ body {
 }
 
 .hero-svg {
-    width: 40vw;
-    display: flex;
-    align-items: center;
+  width: 40vw;
+  display: flex;
+  align-items: center;
 }
 
 .hero-svg > img {
-    width: 80%;
+  width: 80%;
 }
 
 .apply-with-mlh {
-    text-decoration: none;
-    font-family: "Nunito", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #000000;
-    padding: 12px 15px;
-    background-color: #fff;
-    border: 3px solid #000000;
-    border-radius: 5px;
-    transition: 250ms;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000000;
+  padding: 12px 15px;
+  background-color: #fff;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  transition: 250ms;
 }
 
 .apply-with-mlh:hover {
-    color: #ffffff;
-    background-color: #000;
-    border: 3px solid #000000;
-    box-shadow: 0px 15px 60px -20px rgba(0,0,0,0.75);
+  color: #ffffff;
+  background-color: #000;
+  border: 3px solid #000000;
+  box-shadow: 0px 15px 60px -20px rgba(0,0,0,0.75);
 }
 
 .apply-with-mlh img {
-    height: 15px;
-    padding: 0px 10px;
+  height: 15px;
+  padding: 0px 10px;
 }
-/* ========================= QNA ========================= */
 
+/* ---------------------- QNA ---------------------- */
 .slide {
     text-align: center;
 }
@@ -218,7 +218,7 @@ body {
     text-align: justify;
 }
 
-.slide button{
+.slide button {
     background-color: #ffffff;
     color: #000000;
     font-size: 1.1rem;
@@ -236,7 +236,6 @@ body {
 }
 
 /* --------------- Beta-Modal --------------- */
-
 .beta-modal {
   position: absolute;
   bottom: 24px;
@@ -265,6 +264,33 @@ body {
   cursor: pointer;
 }
 
+/* -------------------- Full Page --------------------*/
+.fp-controlArrow.fp-prev {
+  border-color: transparent black transparent transparent !important;
+  left: 128px !important;
+}
+
+.fp-controlArrow.fp-prev:hover {
+  border-color: transparent #555 transparent transparent !important;
+}
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent black !important;
+  right: 128px !important;
+}
+
+.fp-controlArrow.fp-next:hover {
+  border-color: transparent transparent transparent #555 !important;
+}
+
+.section .fp-slidesNav {
+  left: 48% !important;
+}
+
+#fp-nav ul > li > .fp-tooltip.fp-right {
+  color: black;
+}
+
 /* ==================== Media Queries ==================== */
 
 @media(max-width: 888px) {
@@ -275,6 +301,10 @@ body {
 
   .navbar .nav-links {
     display: none;
+  }
+
+  #menu-toggle {
+    display: block;
   }
 
   .header {
