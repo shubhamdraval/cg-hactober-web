@@ -158,7 +158,7 @@ body {
 
 .hero-content > p {
     font-size: 1.8rem;
-    line-height: 2.8rem;
+    line-height: 2rem;
     word-spacing: 5px;
     color: #333;
     margin-bottom: 16px;
@@ -237,17 +237,40 @@ body {
 /* --------------- Prizes-div --------------- */
 
 .prizes {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     height: 100vh;
 }
 
 .p-one {
-    width: 60vw;
-    height: 100%;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     padding: 0 10%;
+}
+
+.p-one > h1{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-bottom: 30px;
+}
+
+.p-one > p{
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+}
+
+.p-two {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+}
+
+.p-two > img{
+    width: 70%;
 }
 
 /* --------------- Prizes-div-end ----------- */
