@@ -199,6 +199,8 @@ body {
   padding: 0px 10px;
 }
 
+/* --------------- Beta-Modal --------------- */
+
 .beta-modal {
   position: absolute;
   bottom: 24px;
@@ -261,5 +263,14 @@ body {
     width: 100vw;
     justify-content: center;
     margin-bottom: 32px;
+  }
+
+  .apply-with-mlh {
+    padding: 7px 10px;
+    font-size: 1.1rem;
+  }
+
+  .apply-with-mlh img {
+    height: 12px;
   }
 }
