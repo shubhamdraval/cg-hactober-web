@@ -19,7 +19,7 @@
 <body>
 
   <!-- Navbar -->
-  <div class="navbar">
+  <nav class="navbar">
     <img src="assets/SVGs/logo.svg" alt="Club-gamma">
     <div class="nav-links">
       <a href="#home">Home</a>
@@ -28,7 +28,29 @@
       <a href="#sponsors">Sponsors</a>
       <a href="#contact" class="btn-link">Contact</a>
     </div>
-  </div>
+    <div id="menu-toggle">
+      <input type="checkbox" />
+      <span style="margin-bottom: 7px;"></span>
+      <span></span>
+      <ul id="menu">
+        <a href="#home">
+          <li>Home</li>
+        </a>
+        <a href="#QnA">
+          <li>Q&A</li>
+        </a>
+        <a href="#prizes">
+          <li>Prizes</li>
+        </a>
+        <a href="#sponsors">
+          <li>Sponsors</li>
+        </a>
+        <a href="#contact">
+          <li>Contact</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
 
   <!-- FullPage -->
   <div id="fullPage">
@@ -37,12 +59,12 @@
     <div class="section">
       <div class="header">
         <div class="hero-content">
-          <p><strong>Hacktoberfest</strong> is a month-long
+          <p><strong style="color: black;">Hacktoberfest</strong> is a month-long
             celebration of open source software
             run by DigitalOcean in partnership
-            with GitHub and Twilio. <br><br>
-            <a href="#" class="apply-with-mlh"><img src="assets/mlh-logo-small.png" alt="MLH"> Apply with MLH</a>
+            with GitHub and Twilio.
           </p>
+          <a href="#" class="apply-with-mlh"><img src="assets/mlh-logo-small.png" alt="MLH"> Apply with MLH</a>
         </div>
         <div class="hero-svg">
           <img src="assets/hacktoberfest-logo.svg" alt="Hactoberfest">
@@ -119,23 +141,40 @@
         </div>
       </div> <!-- QnA-end -->
 
-    </div>
+    </div> <!-- FullPage-end -->
+  </div>
 
-    <!-- fullpage.min.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+  <!-- Site is in beta stage -->
+  <div class="beta-modal">
+    <span>🚧 &nbsp;Site is in Beta stage&nbsp; 🚧 <strong class="close">&times;</strong></span>
+  </div>
 
-    <!-- Custom JS -->
-    <script>
-      new fullpage('#fullPage', {
-        autoScrolling: true,
-        navigation: true,
-        // anchors: ['home', 'QnA', 'prizes', 'sponsors', 'contact'],
-        // navigationTooltips: ['Home', 'Q&A', 'Prizes', 'Sponsors', 'Contact'],
-        showActiveTooltip: true,
-        controlArrows: false,
-        slidesNavigation: true,
-      });
-    </script>
+  <!-- fullpage.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    // Website is in beta stage
+    window.onload = () => {
+      document.querySelector('.close').onclick = () => {
+        document.querySelector('.beta-modal').style.opacity = '0';
+      };
+      setTimeout(() => {
+        document.querySelector('.beta-modal').style.opacity = '0';
+      }, 5000);
+    }
+
+    // FullPage
+    new fullpage('#fullPage', {
+      autoScrolling: true,
+      navigation: true,
+      // anchors: ['home', 'QnA', 'prizes', 'sponsors', 'contact'],
+      // navigationTooltips: ['Home', 'Q&A', 'Prizes', 'Sponsors', 'Contact'],
+      showActiveTooltip: true,
+      controlArrows: false,
+      slidesNavigation: true,
+    });
+  </script>
 
 </body>
 
