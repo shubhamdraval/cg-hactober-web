@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hactoberfest</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hactoberfest</title>
+
+  <!-- fullpage.min.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.css" />
 </head>
+
 <body>
-    
+
+  <!-- fullpage.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    new fullpage('#fullPage', {
+      autoScrolling: true,
+      navigation: true,
+      // anchors: ['home', 'QnA', 'prizes', 'sponsors', 'contact'],
+      // navigationTooltips: ['Home', 'Q&A', 'Prizes', 'Sponsors', 'Contact'],
+      showActiveTooltip: true,
+      controlArrows: false,
+      slidesNavigation: true,
+    });
+  </script>
+
 </body>
+
 </html>
