@@ -507,8 +507,8 @@ body {
   }
 
   .hero-content > p {
-    font-size: 2rem;
-    line-height: 2.1rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
     word-spacing: 2px;
     text-align: center;
   }
@@ -516,7 +516,11 @@ body {
   .hero-svg {
     width: 100vw;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 32px; 
+  }
+
+  .hero-svg > img {
+    animation: none;
   }
 
   .apply-with-mlh {
