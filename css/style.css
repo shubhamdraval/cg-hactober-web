@@ -85,7 +85,7 @@ body {
   z-index: 102;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      opacity 0.55s ease;
+    opacity 0.55s ease;
 }
 
 #menu-toggle span:first-child {
@@ -216,7 +216,7 @@ body {
 
 .apply-with-mlh img {
   height: 20px;
-  padding-right:10px;
+  padding-right: 10px;
   margin: auto 0px;
 }
 
@@ -256,7 +256,7 @@ body {
 }
 
 /* ----------------Projects-div-------------- */
-.projects{
+.projects {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -265,160 +265,156 @@ body {
   text-align: center;
 }
 
-.countdown h1{
-  color: #396;
+.projects h1 {
+  margin-top: 40px;
+}
+
+.countdown #clockdiv {
+  color: #000000;
+  display: inline-block;
   font-weight: 100;
-  font-size: 40px;
-  margin: 40px 0px 20px;
+  text-align: center;
+  font-size: 30px;
 }
 
-.countdown #clockdiv{
-	color: #000000;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	font-size: 30px;
+.countdown #clockdiv > div {
+  padding: 10px;
+  border-radius: 5px;
+  /* background: #0a0e0d; */
+  display: inline-block;
 }
 
-.countdown #clockdiv > div{
-	padding: 10px;
-	border-radius: 3px;
-	/* background: #00BF96; */
-	display: inline-block;
+.countdown #clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  /* background: #4c4d4c; */
+  display: inline-block;
 }
 
-.countdown #clockdiv div > span{
-	padding: 15px;
-	border-radius: 3px;
-	/* background: #00816A; */
-	display: inline-block;
-}
-
-.countdown .smalltext{
-	padding-top: 5px;
-	font-size: 16px;
+.countdown .smalltext {
+  padding-top: 5px;
+  font-size: 16px;
 }
 
 /* --------------- Prizes-div --------------- */
 
 .prizes {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .p-one {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 10%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 10%;
 }
 
-.p-one > h1{
-    font-size: 1.8rem;
-    line-height: 2rem;
-    padding-bottom: 30px;
+.p-one > h1 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding-bottom: 30px;
 }
 
-.p-one > p{
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+.p-one > p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 .p-two {
-    display: flex;
-    align-items: center;
-    width: 50vw;
+  display: flex;
+  align-items: center;
+  width: 50vw;
 }
 
-.p-two > img{
-    width: 70%;
+.p-two > img {
+  width: 70%;
 }
 
 /* --------------- Prizes-div-end -------------- */
 
 /* --------------- Sponsers-div ---------------- */
 
-.sponsers{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.sponsers {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.sponsers h1{
-    font-size: 2rem;
-    text-transform: uppercase;
+.sponsers h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
-.underline{
-    height: 5px;
-    width: 60px;
-    background-color: #818181;
-    margin-bottom: 10px;
-    border-radius: 2px;
+.underline {
+  height: 10px;
+  width: 80px;
+  background-color: #818181;
+  margin-bottom: 10px;
+  border-radius: 2px;
 }
 
-.sponsers img{
-    /* position: absolute; */
-    height: 50px !important;
-    width: auto;
-    padding: 5px;
-    transition: 300ms ease;
+.sponsers img {
+  /* position: absolute; */
+  height: 50px !important;
+  width: auto;
+  padding: 5px;
+  transition: 300ms ease;
 }
 
-.sponsers img:hover{
-    transform: scale(1.1);
-    opacity: 0.8;
+.sponsers img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 /* --------------- Sponsers-div-end ------------ */
 
 /* --------------- Contact-div ------------ */
-.contact{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.contact > h1{
-    font-size: 4rem;
-    font-weight: 400;
-    padding-bottom: 50px;
-
+.contact > h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  padding-bottom: 50px;
 }
 
-.contact-icons > a{
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px 0px;
-    width: 80px;
-    background-color: #000000;
-    margin: 0px 20px;
-    font-size: 40px;
-    border-radius: 15px;
-    transition: 300ms ease;
+.contact-icons > a {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 0px;
+  width: 80px;
+  background-color: #000000;
+  margin: 0px 20px;
+  font-size: 40px;
+  border-radius: 15px;
+  transition: 300ms ease;
 }
 
-.contact-icons > a:hover{
-    color: #000000;
-    background-color: #ffffff;
+.contact-icons > a:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
 /* --------------- Contact-div-end ------------ */
 
@@ -480,12 +476,9 @@ body {
   color: black;
 }
 
-
-
 /* ==================== Media Queries ==================== */
 
-
-@media(max-width: 888px) {
+@media (max-width: 888px) {
   .navbar {
     padding: 0 24px 0 16px;
     height: 56px;
@@ -565,5 +558,10 @@ body {
     font-size: 1.2rem;
     width: 70%;
     line-height: 1.3rem;
+  }
+
+  .projects h1 {
+    margin-top: 40px;
+    font-size: 2rem;
   }
 }
