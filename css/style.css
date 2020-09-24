@@ -297,7 +297,6 @@ body {
 }
 
 /* --------------- Prizes-div --------------- */
-
 .prizes {
   display: flex;
   justify-content: center;
@@ -323,6 +322,7 @@ body {
 .p-one > p {
   font-size: 1.2rem;
   line-height: 1.6rem;
+  margin-bottom: 10px;
 }
 
 .p-two {
@@ -334,11 +334,85 @@ body {
 .p-two > img {
   width: 70%;
 }
-
 /* --------------- Prizes-div-end -------------- */
 
-/* --------------- Sponsers-div ---------------- */
+/*---------------- Workshop-start ---------------*/
+.workshop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.speakers {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 44px;
+}
+
+.speakers > h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.speaker1, .speaker2 {
+  display: flex;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.speaker2 {
+  flex-direction: row-reverse;
+  margin-top: 44px;
+}
+
+.speakers img {
+  height: 256px;
+  width: 256px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 24px;
+}
+
+.speaker-details {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 24px;
+}
+
+.speaker-details h1, .speaker-details p {
+  margin: 6px 0;
+}
+
+.details {
+  width: 50vw;
+  padding: 0 10vw;
+  padding-left: 2vw;
+}
+
+.details h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.details p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.details > .apply-with-mlh {
+  width: fit-content;
+  margin: 24px auto;
+}
+
+/*---------------- Workshop-end -----------------*/
+
+/* --------------- Sponsers-div ---------------- */
 .sponsers {
     display: flex;
     flex-direction: column;
@@ -388,6 +462,7 @@ body {
 
 /* --------------- Contact-div ------------ */
 .contact {
+  position: relative;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -428,6 +503,24 @@ body {
   color: #000000;
   background-color: #ffffff;
   transform: translateY(-5px);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 16px 0;
+  font-size: 1.3rem;
+}
+
+.footer a {
+  color: cyan;
+  text-decoration: none;
 }
 /* --------------- Contact-div-end ------------ */
 
@@ -487,6 +580,10 @@ body {
 
 #fp-nav ul > li > .fp-tooltip.fp-right {
   color: black;
+}
+
+.mobile-only {
+  display: none !important;
 }
 
 /* ==================== Media Queries ==================== */
@@ -592,6 +689,29 @@ body {
 
   .prizes {
     flex-direction: column-reverse;
+    height: 90vh;
+  }
+
+  .speakers {
+    display: none;
+  }
+
+  .details {
+    width: 100vw;
+    padding: 0 24px;
+  }
+
+  .details h1 {
+    font-size: 1.5rem;
+  }
+
+  .details p {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+
+  .mobile-only {
+    display: block !important;
   }
 
   .p-one {
@@ -608,7 +728,6 @@ body {
 
   .p-one p {
     font-size: 1.1rem;
-    text-align: center;
     line-height: 1.2rem;
   }
 
@@ -619,7 +738,7 @@ body {
   }
 
   .p-two > img {
-    width: 80%;
+    width: 70%;
   }
 
   .sponsers h1, .in-asso-with h1 {
@@ -660,5 +779,17 @@ body {
     height: 50px;
     margin: 20px 20px 0 20px;
     font-size: 20px;
+  }
+
+  .footer {
+    align-items: flex-start;
+    padding: 16px 0;
+    font-size: 1.1rem;
+    height: 111px;
+  }
+
+  .footer a {
+    color: cyan;
+    text-decoration: none;
   }
 }
