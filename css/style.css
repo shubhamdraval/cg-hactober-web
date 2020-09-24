@@ -259,6 +259,44 @@ body {
 .projects{
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.countdown h1{
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+.countdown #clockdiv{
+	color: #000000;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+.countdown #clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	/* background: #00BF96; */
+	display: inline-block;
+}
+
+.countdown #clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	/* background: #00816A; */
+	display: inline-block;
+}
+
+.countdown .smalltext{
+	padding-top: 5px;
+	font-size: 16px;
 }
 
 /* --------------- Prizes-div --------------- */
