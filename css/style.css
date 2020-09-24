@@ -173,7 +173,7 @@ body {
 .hero-svg > img {
   width: 80%;
   position: relative;
-  animation: float-updown 5s linear infinite;
+  animation: float-updown 10s linear infinite;
 }
 
 @keyframes float-updown {
@@ -266,13 +266,13 @@ body {
     padding: 0 10%;
 }
 
-.p-one > h1{
-    font-size: 1.8rem;
+.p-one > h1 {
+    font-size: 2rem;
     line-height: 2rem;
     padding-bottom: 30px;
 }
 
-.p-one > p{
+.p-one > p {
     font-size: 1.2rem;
     line-height: 1.6rem;
 }
@@ -283,7 +283,7 @@ body {
     width: 50vw;
 }
 
-.p-two > img{
+.p-two > img {
     width: 70%;
 }
 
@@ -291,9 +291,7 @@ body {
 
 /* --------------- Sponsers-div ---------------- */
 
-.sponsers{
-    height: 100vh;
-    width: 100vw;
+.sponsers {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,12 +299,12 @@ body {
     text-align: center;
 }
 
-.sponsers h1{
+.sponsers h1, .in-asso-with h1 {
     font-size: 2rem;
     text-transform: uppercase;
 }
 
-.underline{
+.underline {
     height: 5px;
     width: 60px;
     background-color: #818181;
@@ -314,17 +312,28 @@ body {
     border-radius: 2px;
 }
 
-.sponsers img{
-    /* position: absolute; */
-    height: 50px !important;
-    width: auto;
-    padding: 5px;
+.sponsers img {
+    height: 128px;
     transition: 300ms ease;
 }
 
-.sponsers img:hover{
+.sponsers img:hover, .in-asso-with img:hover {
     transform: scale(1.1);
     opacity: 0.8;
+}
+
+.in-asso-with {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.in-asso-with img {
+  height: 86px;
+  transition: 300ms ease;
+  margin-top: 24px;
 }
 
 /* --------------- Sponsers-div-end ------------ */
@@ -514,5 +523,75 @@ body {
     font-size: 1.2rem;
     width: 70%;
     line-height: 1.3rem;
+  }
+
+  .prizes {
+    flex-direction: column-reverse;
+  }
+
+  .p-one {
+    width: 100vw;
+    padding: 0 24px;
+  }
+
+  .p-one h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 16px;
+  }
+
+  .p-one p {
+    text-align: center;
+  }
+
+  .p-two {
+    width: 100vw;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  .p-two > img {
+    width: 80%;
+  }
+
+  .sponsers h1, .in-asso-with h1 {
+    font-size: 1.5rem;
+  }
+
+  .underline {
+    height: 3px;
+  }
+
+  .sponsers img {
+    height: 86px;
+  }
+
+  .in-asso-with {
+    margin-top: 44px;
+  }
+
+  .in-asso-with img {
+    height: 64px;
+    max-width: 85vw;
+    margin-top: 24px;
+  }
+
+  .contact-icons {
+    flex-wrap: wrap;
+  }
+
+  .contact > h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    padding-bottom: 0;
+  }
+
+  .contact-icons > a {
+    padding: 5px 0px;
+    width: 40px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 7px;
   }
 }
