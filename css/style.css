@@ -85,7 +85,7 @@ body {
   z-index: 102;
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      opacity 0.55s ease;
+    opacity 0.55s ease;
 }
 
 #menu-toggle span:first-child {
@@ -158,10 +158,10 @@ body {
 
 .hero-content > p {
   font-size: 1.8rem;
-  line-height: 2.8rem;
+  line-height: 2rem;
   word-spacing: 5px;
   color: #333;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 
 .hero-svg {
@@ -193,24 +193,31 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #000000;
-  padding: 12px 15px;
-  background-color: #fff;
+  color: #ffffff;
+  padding: 10px 20px;
+  /* background-color: #fff; */
+  background-color: #000000;
   border: 3px solid #000000;
   border-radius: 5px;
   transition: 250ms;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 15px 60px -20px rgba(0, 0, 0, 0.75);
 }
 
 .apply-with-mlh:hover {
   color: #ffffff;
-  background-color: #000;
-  border: 3px solid #000000;
-  box-shadow: 0px 15px 60px -20px rgba(0, 0, 0, 0.75);
+  background-color: rgb(37, 37, 37);
+  border: 3px solid rgb(37, 37, 37);
+  box-shadow: none;
+  transform: translateY(2px);
+  /* box-shadow: 0px 15px 60px -20px rgba(0, 0, 0, 0.75); */
 }
 
 .apply-with-mlh img {
-  height: 15px;
-  padding: 0px 10px;
+  height: 20px;
+  padding-right: 10px;
+  margin: auto 0px;
 }
 
 /* ---------------------- QNA ---------------------- */
@@ -248,43 +255,84 @@ body {
   box-shadow: 0px 0px 60px -25px rgba(0, 0, 0, 0.75);
 }
 
+/* ----------------Projects-div-------------- */
+.projects {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects h1 {
+  margin-top: 40px;
+}
+
+.countdown #clockdiv {
+  color: #000000;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown #clockdiv > div {
+  padding: 10px;
+  border-radius: 5px;
+  /* background: #0a0e0d; */
+  display: inline-block;
+}
+
+.countdown #clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  /* background: #4c4d4c; */
+  display: inline-block;
+}
+
+.countdown .smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
 /* --------------- Prizes-div --------------- */
 
 .prizes {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .p-one {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 10%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 10%;
 }
 
 .p-one > h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-    padding-bottom: 30px;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding-bottom: 30px;
 }
 
 .p-one > p {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 .p-two {
-    display: flex;
-    align-items: center;
-    width: 50vw;
+  display: flex;
+  align-items: center;
+  width: 50vw;
 }
 
 .p-two > img {
-    width: 70%;
+  width: 70%;
 }
 
 /* --------------- Prizes-div-end -------------- */
@@ -339,44 +387,47 @@ body {
 /* --------------- Sponsers-div-end ------------ */
 
 /* --------------- Contact-div ------------ */
-.contact{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contact {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.contact-icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.contact > h1{
-    font-size: 4rem;
-    font-weight: 400;
-    padding-bottom: 50px;
-
+.contact > h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  padding-bottom: 50px;
 }
 
-.contact-icons > a{
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px 0px;
-    width: 80px;
-    background-color: #000000;
-    margin: 0px 20px;
-    font-size: 40px;
-    border-radius: 15px;
-    transition: 300ms ease;
+.contact-icons > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  width: 80px;
+  height: 80px;
+  background-color: #000000;
+  margin: 0px 20px;
+  font-size: 30px;
+  border-radius: 50%;
+  transition: 300ms ease;
 }
 
-.contact-icons > a:hover{
-    color: #000000;
-    background-color: #ffffff;
+.contact-icons > a:hover {
+  color: #000000;
+  background-color: #ffffff;
+  transform: translateY(-5px);
 }
 /* --------------- Contact-div-end ------------ */
 
@@ -438,12 +489,9 @@ body {
   color: black;
 }
 
-
-
 /* ==================== Media Queries ==================== */
 
-
-@media(max-width: 888px) {
+@media (max-width: 888px) {
   .navbar {
     padding: 0 24px 0 16px;
     height: 56px;
@@ -479,7 +527,11 @@ body {
   .hero-svg {
     width: 100vw;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 32px; 
+  }
+
+  .hero-svg > img {
+    animation: none;
   }
 
   .apply-with-mlh {
@@ -514,15 +566,28 @@ body {
   }
 
   .slide h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
   }
 
   .slide p {
-    font-size: 1.2rem;
-    width: 70%;
-    line-height: 1.3rem;
+    font-size: 1rem;
+    width: 80%;
+    line-height: 1.2rem;
+    text-align: start;
+    text-justify: inter-word;
+  }
+
+  .projects h1 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    padding-bottom: 8px;
+  }
+
+  .sponsers h1 {
+    font-size: 1.8rem;
   }
 
   .prizes {
@@ -538,11 +603,13 @@ body {
     font-size: 1.5rem;
     text-align: center;
     padding-bottom: 0;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .p-one p {
+    font-size: 1.1rem;
     text-align: center;
+    line-height: 1.2rem;
   }
 
   .p-two {
@@ -579,6 +646,7 @@ body {
 
   .contact-icons {
     flex-wrap: wrap;
+    width: 90vw;
   }
 
   .contact > h1 {
@@ -588,10 +656,9 @@ body {
   }
 
   .contact-icons > a {
-    padding: 5px 0px;
-    width: 40px;
-    margin: 5px;
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px 0 20px;
     font-size: 20px;
-    border-radius: 7px;
   }
 }
